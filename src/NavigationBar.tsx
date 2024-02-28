@@ -7,7 +7,7 @@ function NavigationBar(): JSX.Element {
       <Typography variant="h6" component="div" sx={{flexGrow: 1}}>
         User Admin App
       </Typography>
-      <Button color="inherit" component={Link} to="/">
+      <Button style={{marginRight: '1rem'}} color="inherit" component={Link} to="/">
         New
       </Button>
       <Button color="inherit" component={Link} to="/users">
