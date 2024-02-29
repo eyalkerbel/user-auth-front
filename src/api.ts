@@ -8,15 +8,15 @@ export const apiClient = axios.create({
 });
 
 export const fetchUsers = async () => {
-  const {data} = await apiClient.get('/users');
+  const {data} = await apiClient.get('/api/users');
   return data;
 };
 
 export const deleteUser = async (userId: string) => {
-  await apiClient.delete(`/users/${userId}`);
+  await apiClient.delete(`/api/users/${userId}`);
 };
 
 export const createUser = async (user: User) => {
-  const {data} = await apiClient.post('/users', user);
+  const {data} = await apiClient.post('/api/users', user);
   return data;
 };
