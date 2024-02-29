@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import UserForm from "./compoents/UserForm";
-import UsersList from "./compoents/UserList";
+import UsersList from "./compoents/UsersList";
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
 import {createTheme, ThemeProvider} from '@mui/material/styles';
